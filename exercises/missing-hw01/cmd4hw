@@ -1,0 +1,8 @@
+> vim semester
+> cat semester
+#!/bin/zsh
+curl --head --silent https://missing.csail.mit.edu
+> chmod +x semester
+> ./semester | grep 'last-modified' | cut --delimiter=" " -f2- > last-modified.txt
+> cat last-modified.txt
+Sat, 21 Dec 2024 16:53:01 GMT
